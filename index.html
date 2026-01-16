@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flower Shop</title>
+
+    <style>
+        body {
+            margin: 0;
+            font-family: "Segoe UI", Arial, sans-serif;
+            background-color: #f7f7f7;
+            color: #333;
+        }
+
+        header {
+            background: #2f6f4e;
+            color: white;
+            padding: 25px;
+            text-align: center;
+        }
+
+        header h1 {
+            margin: 0;
+        }
+
+        .hero {
+            background-image: url("https://upload.wikimedia.org/wikipedia/commons/1/1f/Rose_garden.jpg");
+            background-size: cover;
+            background-position: center;
+            padding: 80px 20px;
+            text-align: center;
+            color: white;
+        }
+
+        .hero h2 {
+            font-size: 2.5rem;
+            background: rgba(0,0,0,0.4);
+            display: inline-block;
+            padding: 10px 20px;
+            border-radius: 8px;
+        }
+
+        .container {
+            max-width: 1100px;
+            margin: auto;
+            padding: 40px 20px;
+        }
+
+        .products {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+        }
+
+        .product {
+            background: white;
+            border-radius: 10px;
+            padding: 20px;
+            text-align: center;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+        }
+
+        .product img {
+            width: 100%;
+            height: 220px;
+            object-fit: cover;
+            border-radius: 8px;
+        }
+
+        .product h3 {
+            margin: 15px 0 5px;
+        }
+
+        .price {
+            color: #2f6f4e;
+            font-weight: bold;
+            font-size: 1.2rem;
+            margin-bottom: 10px;
+        }
+
+        button {
+            background: #2f6f4e;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background: #24563d;
+        }
+
+        footer {
+            background: #2f6f4e;
+            color: white;
+            text-align: center;
+            padding: 20px;
+            margin-top: 40px;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Blomsterhörnan</h1>
+    <p>Färska blommor – varje dag</p>
+</header>
+
+<section class="hero">
+    <h2>Sprid glädje med blommor</h2>
+</section>
+
+<div class="container">
+    <h2>Populära buketter</h2>
+
+    <div class="products">
+        <div class="product">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/3/36/Bouquet_of_roses.jpg" alt="Rosbukett">
+            <h3>Rosbukett</h3>
+            <p class="price">299 kr</p>
+            <button>Köp</button>
+        </div>
+
+        <div class="product">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/6/6d/Tulip_bouquet.jpg" alt="Tulpanbukett">
+            <h3>Tulpanbukett</h3>
+            <p class="price">199 kr</p>
+            <button>Köp</button>
+        </div>
+
+        <div class="product">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/0/0f/Sunflower_bouquet.jpg" alt="Solrosbukett">
+            <h3>Solrosbukett</h3>
+            <p class="price">249 kr</p>
+            <button>Köp</button>
+        </div>
+    </div>
+</div>
+
+<footer>
+    <p>&copy; 2026 Blomsterhörnan</p>
+</footer>
+
+</body>
+</html>
